@@ -1,0 +1,10 @@
+DEVICE=br-ex
+ONBOOT=yes
+DEVICETYPE=ovs
+TYPE=OVSBridge
+OVSBOOTPROTO=dhcp
+OVSDHCPINTERFACES=bond1
+MTU=9000
+MACADDR=18:03:73:ef:73:43
+OVS_EXTRA="set bridge br-ex other-config:hwaddr=$MACADDR"
+HOTPLUG=no

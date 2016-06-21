@@ -1,0 +1,11 @@
+DEVICE=bond1
+ONBOOT=yes
+MTU=9000
+DEVICETYPE=ovs
+TYPE=OVSBond
+OVS_BRIDGE=br-ex
+BOOTPROTO=none
+BOND_IFACES="em2 em4"
+OVS_OPTIONS="bond_mode=balance-tcp lacp=active" 
+IPV6INIT=no
+HOTPLUG=no
