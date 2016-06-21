@@ -1,0 +1,5 @@
+[fwaas]
+#driver = neutron_fwaas.services.firewall.drivers.linux.iptables_fwaas.IptablesFwaasDriver
+driver = neutron.services.firewall.drivers.linux.iptables_fwaas.IptablesFwaasDriver
+#enabled = True
+enabled = True

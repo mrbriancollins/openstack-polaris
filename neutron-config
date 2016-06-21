@@ -1,0 +1,52 @@
+neutron net-create polaris_external --provider:network_type flat --provider:physical_network bond0  --router:external --shared
+neutron subnet-create --name polaris_subnet --enable_dhcp=False --allocation-pool=start=10.1.13.50,end=10.1.13.250 --gateway=10.1.13.1 external_network 10.1.13.0/24
+neutron router-create polaris_external_router
+neutron router-gateway-set polaris_external_router polaris_external
+neutron router-interface-add polaris_external_router polaris_subnet
+
+10.1.13.5:/mnt/DATA/nova      /var/lib/nova nfs     defaults        0 0
+
+ 239  neutron net-create polaris_external --provider:network_type flat --provider:physical_network bond0  --router:external --shared
+  240  neutron subnet-create --name public_subnet --enable_dhcp=False --allocation-pool=start=10.1.13.50,end=10.1.13.250 --gateway=10.1.13.1 external_network 10.1.13.0/24
+  241  neutron subnet-create --name public_subnet --enable_dhcp=False --allocation-pool=start=10.1.13.50,end=10.1.13.250 --gateway=10.1.13.1 polaris_external 10.1.13.0/24
+  242  neutron router-create polaris_external_router
+  243  neutron router-gateway-set polaris_external_router polaris_external
+  244  neutron net-list
+  245  neutron router-interface-add polaris_external_router private
+  246  neutron subnet-list
+  247  neutron router-interface-add polaris_external_router private_subnet
+  248  neutron net-delete private
+  249  neutron port-list
+  250  neutron port-delete 7b09ba6c-fc86-4389-b039-046a419b213a
+  251  neutron router-list
+  252  neutron router-delete router1
+  253  neutron router-gateway-delete router1
+  254  neutron
+  256  neutron
+  257  neutron router-interface-add polaris_external_router private
+  258  neutron router-interface-add polaris_external_router private_subnet
+  259  neutron router-interface-add polaris_external_router admin
+  260  neutron subnet-list
+  262  neutron router-interface-add polaris_external_router admin_subnet
+
+  
+  
+  
+  
+  
+openstack-config --set /etc/cinder/cinder.conf GlusterFS volume_driver cinder.volume.drivers.glusterfs.GlusterfsDriver
+openstack-config --set /etc/cinder/cinder.conf GlusterFS glusterfs_shares_config /etc/cinder/glusterfs-shares.conf
+openstack-config --set /etc/cinder/cinder.conf GlusterFS glusterfs_mount_point_base /var/lib/cinder/volumes
+
+
+2016-01-06 03:50:44.667 18352 DEBUG cinder.api.openstack.wsgi [req-e5a9a91c-2281-4d62-894a-ba436697ca26 63c9ca9aeae9424a9184b44c20db1d04 c8513a185c894a7cad96bf26e8ddb66e - - -] Empty body provided in request get_body /usr/lib/python2.7/site-packages/cinder/api/openstack/wsgi.py:862
+2016-01-06 03:50:44.683 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: gigabytes_NFS is set by the default quota flag: quota_gigabytes_NFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.684 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: snapshots_NFS is set by the default quota flag: quota_snapshots_NFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.684 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: backup_gigabytes is set by the default quota flag: quota_backup_gigabytes, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.685 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: volumes_NFS is set by the default quota flag: quota_volumes_NFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.686 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: volumes_GlusterFS is set by the default quota flag: quota_volumes_GlusterFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.687 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: backups is set by the default quota flag: quota_backups, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.688 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: gigabytes_GlusterFS is set by the default quota flag: quota_gigabytes_GlusterFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.689 18352 WARNING cinder.quota [req-34121d2b-97a1-4949-81f8-54cfee406f7c - - - - -] Deprecated: Default quota for resource: snapshots_GlusterFS is set by the default quota flag: quota_snapshots_GlusterFS, it is now deprecated. Please use the default quota class for default quota.
+2016-01-06 03:50:44.712 18352 INFO cinder.api.openstack.wsgi [req-4e428043-b91a-4c23-ba83-088f26dd2c65 - - - - -] http://10.1.10.251:8776/v2/c8513a185c894a7cad96bf26e8ddb66e/limits returned with HTTP 200
+2016-01-06 03:50:44.712 18352 INFO eventlet.wsgi.server [req-4e428043-b91a-4c23-ba83-088f26dd2c65 - - - - -] 10.1.10.251 - - [06/Jan/2016 03:50:44] "GET /v2/c8513a185c894a7cad96bf26e8ddb66e/limits HTTP/1.1" 200 566 0.048179

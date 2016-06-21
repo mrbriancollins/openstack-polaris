@@ -1,0 +1,10 @@
+NAME=Bond connection bond0
+MTU=9000
+ONBOOT=yes
+UUID=830812ed-5267-4d6f-8dc9-d40a727add9f
+DEVICE=br-ex
+DEVICETYPE=ovs
+OVSBOOTPROTO=dhcp
+TYPE=OVSBridge
+OVSDHCPINTERFACES=bond0
+OVS_EXTRA="set bridge br-ex other-config:hwaddr=18:03:73:ef:73:41"

@@ -1,0 +1,12 @@
+# This file is automatically maintained by lvm.
+
+persistent_filter_cache {
+	valid_devices=[
+		"/dev/disk/by-id/lvm-pv-uuid-DYdgYl-DG8f-jL3k-Ma9v-ao14-IWhR-raffCR",
+		"/dev/disk/by-path/pci-0000:03:00.0-scsi-0:2:0:0-part2",
+		"/dev/disk/by-id/wwn-0x6782bcb0364ed6001d3516cd05843437-part2",
+		"/dev/block/8:2",
+		"/dev/sda2",
+		"/dev/disk/by-id/scsi-36782bcb0364ed6001d3516cd05843437-part2"
+	]
+}
