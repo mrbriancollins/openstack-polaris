@@ -1,0 +1,6 @@
+DEVICE=15-patch-int
+ONBOOT=yes
+DEVICETYPE=ovs
+TYPE=OVSPatchPort
+OVS_BRIDGE=br15
+OVS_PATCH_PEER=int-patch-15

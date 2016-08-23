@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenStack gnocchi metricd service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=gnocchi
+ExecStart=/usr/bin/gnocchi-metricd --logfile /var/log/gnocchi/metricd.log
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+

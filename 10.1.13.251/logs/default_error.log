@@ -1,0 +1,1 @@
+[Tue Aug 23 14:00:18.453144 2016] [:error] [pid 7732] [client 10.1.10.1:54311] script '/var/www/html/command.php' not found or unable to stat

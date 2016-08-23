@@ -1,0 +1,6 @@
+DEVICE=10-patch-int
+ONBOOT=yes
+DEVICETYPE=ovs
+TYPE=OVSPatchPort
+OVS_BRIDGE=br10
+OVS_PATCH_PEER=int-patch-10

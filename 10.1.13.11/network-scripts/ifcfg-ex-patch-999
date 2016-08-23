@@ -1,0 +1,6 @@
+DEVICE=ex-patch-999
+ONBOOT=yes
+DEVICETYPE=ovs
+TYPE=OVSPatchPort
+OVS_BRIDGE=br-ex
+OVS_PATCH_PEER=999-patch-ex

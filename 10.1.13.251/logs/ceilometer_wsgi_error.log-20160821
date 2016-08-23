@@ -1,0 +1,2 @@
+[Thu Aug 18 20:42:54.696236 2016] [:error] [pid 5531] Option "verbose" from group "DEFAULT" is deprecated for removal.  Its value may be silently ignored in the future.
+[Thu Aug 18 20:42:54.697772 2016] [:error] [pid 5531] Value 'password-ceilometer-legacy' for '[service_credentials]/auth_type' is deprecated. And will be removed in Ceilometer 7.0. Use 'password' instead.

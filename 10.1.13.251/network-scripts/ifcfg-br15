@@ -1,0 +1,12 @@
+DEVICE=br15
+ONBOOT=yes
+MTU=9000
+MACADDR=14:fe:b5:db:78:76
+PEERDNS=no
+DEFROUTE=no
+HOTPLUG=no
+DEVICETYPE=ovs
+TYPE=OVSBridge
+#OVSBOOTPROTO=dhcp
+#OVSDHCPINTERFACES=em1.15
+OVS_EXTRA="set bridge $DEVICE other-config:hwaddr=$MACADDR -- set port $DEVICE tag=15"

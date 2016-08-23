@@ -1,0 +1,8 @@
+[Sun Aug 21 03:18:02.052897 2016] [auth_digest:notice] [pid 6157] AH01757: generating secret for digest authentication ...
+[Sun Aug 21 03:18:02.203636 2016] [mpm_prefork:notice] [pid 6157] AH00163: Apache/2.4.6 (CentOS) PHP/5.4.16 OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sun Aug 21 03:18:02.203672 2016] [core:notice] [pid 6157] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Aug 23 03:31:37.625953 2016] [mpm_prefork:notice] [pid 6157] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Aug 23 03:36:02.361004 2016] [suexec:notice] [pid 5826] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Tue Aug 23 03:36:02.380264 2016] [auth_digest:notice] [pid 5826] AH01757: generating secret for digest authentication ...
+[Tue Aug 23 03:36:02.549459 2016] [mpm_prefork:notice] [pid 5826] AH00163: Apache/2.4.6 (CentOS) PHP/5.4.16 OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Tue Aug 23 03:36:02.549498 2016] [core:notice] [pid 5826] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
