@@ -1,0 +1,13 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Sun Sep 18 18:55:39 2016
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/centos-root /                       xfs     defaults        1 1
+UUID=379405cb-05f6-4230-83e2-713faa76e1f0 /boot                   xfs     defaults        1 2
+/dev/mapper/centos-swap swap                    swap    defaults        0 0
+/dev/sdb /export/sdb xfs noatime,nodiratime,nobarrier,logbufs=8 0 0
+10.1.13.5:/mnt/DATA/openstack/nova        /var/lib/nova/instances   nfs     defaults        0 0

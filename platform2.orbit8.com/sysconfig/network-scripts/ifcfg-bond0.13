@@ -1,0 +1,7 @@
+DEVICE=bond0.13
+ONBOOT=yes
+BOOTPROTO=dhcp
+TYPE=Vlan
+VLAN=yes
+DEFROUTE=yes
+MACADDR=14:fe:b5:db:76:76

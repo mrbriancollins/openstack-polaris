@@ -1,0 +1,7 @@
+ONBOOT=yes
+OVS_BRIDGE=br-ex
+DEVICE=br-ex
+NAME=br-ex
+DEVICETYPE=ovs
+OVSBOOTPROTO=none
+TYPE=OVSBridge
