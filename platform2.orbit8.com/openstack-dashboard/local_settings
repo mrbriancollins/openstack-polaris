@@ -22,7 +22,7 @@ LOGOUT_URL = '/dashboard/auth/logout/'
 # HORIZON_CONFIG.user_home, if user_home is not set.
 # Do not set it to '/home/', as this will cause circular redirect loop
 #LOGIN_REDIRECT_URL = WEBROOT
-LOGIN_REDIRECT_URL = '/dashboard/'
+LOGIN_REDIRECT_URL = '/dashboard/project/network_topology/'
 
 # Required for Django 1.5.
 # If horizon is running in production (DEBUG is False), set this
@@ -275,6 +275,7 @@ LAUNCH_INSTANCE_NG_ENABLED = True
 OPENSTACK_HYPERVISOR_FEATURES = {
     'can_set_mount_point': False,
     'can_set_password': True,
+    'requires_keypair': False,
 }
 
 # The OPENSTACK_CINDER_FEATURES settings can be used to enable optional
@@ -442,7 +443,7 @@ TIME_ZONE = "UTC"
 # Set this to True to display an 'Admin Password' field on the Change Password
 # form to verify that it is indeed the admin logged-in who wants to change
 # the password.
-#ENFORCE_PASSWORD_CHECK = False
+ENFORCE_PASSWORD_CHECK = True
 
 # Modules that provide /auth routes that can be used to handle different types
 # of user authentication. Add auth plugins that require extra route handling to
