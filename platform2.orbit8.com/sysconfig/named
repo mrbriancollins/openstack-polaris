@@ -10,3 +10,4 @@
 #                            valid before named starts. If you set this option
 #                            to 'yes' then service file doesn't perform those
 #                            checks.
+OPTIONS="-4"
