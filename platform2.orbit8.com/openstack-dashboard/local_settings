@@ -22,8 +22,8 @@ LOGOUT_URL = '/dashboard/auth/logout/'
 # HORIZON_CONFIG.user_home, if user_home is not set.
 # Do not set it to '/home/', as this will cause circular redirect loop
 #LOGIN_REDIRECT_URL = WEBROOT
-LOGIN_REDIRECT_URL = '/dashboard/project/network_topology/'
-
+#LOGIN_REDIRECT_URL = '/dashboard/project/network_topology/'
+LOGIN_REDIRECT_URL = '/dashboard/projects/'
 # Required for Django 1.5.
 # If horizon is running in production (DEBUG is False), set this
 # with the list of host/domain names that the application can serve.
@@ -44,8 +44,8 @@ ALLOWED_HOSTS = ['*', ]
 # If Horizon is being served through SSL, then uncomment the following two
 # settings to better secure the cookies from security exploits
 
-#CSRF_COOKIE_SECURE = True
-#SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 
 # Overrides for OpenStack API versions. Use this setting to force the
@@ -69,12 +69,12 @@ OPENSTACK_API_VERSIONS = {
 
 # Set this to True if running on multi-domain model. When this is enabled, it
 # will require user to enter the Domain name in addition to username for login.
-#OPENSTACK_KEYSTONE_MULTIDOMAIN_SUPPORT = False
+#OPENSTACK_KEYSTONE_MULTIDOMAIN_SUPPORT = True
 
 
 # Overrides the default domain used when running on single-domain model
 # with Keystone V3. All entities will be created in the default domain.
-#OPENSTACK_KEYSTONE_DEFAULT_DOMAIN = 'Default'
+OPENSTACK_KEYSTONE_DEFAULT_DOMAIN = 'Default'
 
 
 # Set Console type:
@@ -143,25 +143,21 @@ SECRET_KEY='633b930e8ee92ec3a2b9'
 # We recommend you use memcached for development; otherwise after every reload
 # of the django development server, you will have to login again. To use
 # memcached set CACHES to something like
-#CACHES = {
-#    'default': {
-#        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-#        'LOCATION': '127.0.0.1:11211',
-#    }
-#}
-#
+SESSION_ENGINE='django.contrib.sessions.backends.cache'
+
+CACHES = {
+    'default': {
+       #
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
+
 #CACHES = {
 #    'default': {
 #        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
 #    }
 #}
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-    
-    }
-}
-
 
 
 # Send email to the console by default
@@ -185,6 +181,7 @@ EMAIL_PORT = 25
 #OPENSTACK_KEYSTONE_URL = "http://%s:5000/v2.0" % OPENSTACK_HOST
 #OPENSTACK_KEYSTONE_DEFAULT_ROLE = "_member_"
 OPENSTACK_KEYSTONE_URL = "http://10.1.13.251:5000/v2.0"
+#OPENSTACK_KEYSTONE_URL = "http://10.1.13.251:5000/v3"
 OPENSTACK_KEYSTONE_DEFAULT_ROLE = "_member_"
 
 # Enables keystone web single-sign-on if set to True.
@@ -332,7 +329,7 @@ OPENSTACK_CINDER_FEATURES = {
     #'supported_vnic_types': ['*']
 #}
 OPENSTACK_NEUTRON_NETWORK = {
-    'enable_distributed_router': False,
+    'enable_distributed_router': True,
     'enable_firewall': True,
     'enable_ha_router': False,
     'enable_lb': True,

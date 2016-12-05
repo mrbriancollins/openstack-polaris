@@ -12,6 +12,7 @@
 /dev/mapper/centos-root	/	xfs	defaults	1	1
 UUID=3f93d24e-eb51-4027-995f-ff4bd06b92ae	/boot	xfs	defaults	1	2
 /dev/mapper/centos-swap	swap	swap	defaults	0	0
+10.1.13.5:/mnt/DATA/openstack/mongodb	/var/lib/mongodb	nfs	defaults	0	0
 10.1.13.5:/mnt/DATA/openstack/nova	/var/lib/nova/instances	nfs	defaults	0	0
 10.1.13.11:/conversion	/var/lib/cinder/conversion	glusterfs	defaults	0	0
 10.1.13.11:/vmigrate	/var/lib/glance	glusterfs	defaults	0	0
