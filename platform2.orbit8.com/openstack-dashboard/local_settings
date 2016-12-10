@@ -253,7 +253,7 @@ OPENSTACK_ENABLE_PASSWORD_RETRIEVE = True
 # Toggle LAUNCH_INSTANCE_LEGACY_ENABLED and LAUNCH_INSTANCE_NG_ENABLED to
 # determine the experience to enable.  Set them both to true to enable
 # both.
-#LAUNCH_INSTANCE_LEGACY_ENABLED = True
+LAUNCH_INSTANCE_LEGACY_ENABLED = True
 LAUNCH_INSTANCE_NG_ENABLED = True
 
 # The Xen Hypervisor has the ability to set the mount point for volumes
@@ -740,6 +740,12 @@ SECURITY_GROUP_RULES = {
         'ip_protocol': 'tcp',
         'from_port': '1433',
         'to_port': '1433',
+    },
+    'oracle': {
+        'name': 'Oracle DB',
+        'ip_protocol': 'tcp',
+        'from_port': '1521',
+        'to_port': '1521',
     },
     'mysql': {
         'name': 'MYSQL',

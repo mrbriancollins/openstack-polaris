@@ -1,0 +1,1000 @@
+rm -rf *
+history | grep clone
+cd ..
+git clone https://github.com/mrbriancollins/openstack-polaris.git
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+git rm -f *.rpmnew
+cd openstack-polaris/
+git rm -f *.rpmnew
+git rm -f *.rpmsave
+git add *
+git rm -f *.rpmsave
+git rm -f *.rpmnew
+git commit
+git push
+git checkout -b designate-implementation
+yum search named
+yum search bind
+yum install bind-sdb-chroot.x86_64
+yum erase named
+yum erase bind
+yum install bind-sdb-chroot.x86_64
+cd /var/log/neutron/
+tail -f openvswitch-agent.log &
+jobs
+fg
+cd
+ls
+history
+yum erase bind-sdb-chroot.x86_64
+yum erase bind
+yum search powerdns
+yum search pdns
+yum search all pdns
+cd /etc/openstack-dashboard/
+ls
+vi local_settings 
+systemctl restart httpd 
+vi local_settings 
+systemctl restart httpd 
+journalctl -xe
+vi local_settings 
+systemctl restart httpd 
+systemctl status httpd 
+vi local_settings 
+systemctl status httpd 
+systemctl restart httpd 
+vi local_settings 
+systemctl restart httpd 
+systemctl status httpd 
+cp /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/local_settings .
+cp /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/local_settings local_settings.old
+diff -y local_settings.old local_settings
+diff -h local_settings.old local_settings
+service memcached status
+diff -help
+diff --help
+diff local_settings local_settings.old 
+vi local_settings 
+diff local_settings local_settings.old 
+systemctl restart httpd 
+mv local_settings local_settings.bak
+mv local_settings.old local_settings
+service httpd restart
+tail -f /var/log/horizon/horizon.log &
+ls
+rm local_settings.bak 
+openstack-service restart
+fg
+tail -f /var/log/nova/nova-api.log
+tail -f /var/log/nova/nova-conductor.log
+fg
+jobs
+ls -ltr
+vi local_settings 
+service httpd status
+cd /etc/openstack-dashboard/
+ld
+ls
+ls -ltr 
+cd static/
+ls
+cd ..
+ls
+cd static/scss/assets/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+service memcached restart
+systemctl status memcached.service 
+systemctl restart httpd
+openstack-service status
+openstack-service restart
+tail -f /var/log/nova/nova-conductor.log
+tail -f /var/log/horizon/horizon.log &
+cd /var/log/ 
+journalctl 
+tail -f /var/log/nova/nova-conductor.logq
+:q
+:qqq
+QQQqqqggGG
+history
+cd /etc/
+ls -ltr
+cd openstack-dashboard/
+ls
+ls -ltr
+chown -R root:apache *
+ls -ltr
+service httpd restart
+diff /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/local_settings /etc/openstack-dashboard/local_settings 
+cd /var/log/httpd/
+ls
+ls -ltr
+tail -f keystone_wsgi_admin_access.log
+tail -f keystone*.log
+tail -f keystone*{.,_}log
+tail -f {keystone,admin,error}*{.,_}log 
+tail -f {keystone,admin,error}*{.,_}log &
+clear
+fg 
+jobs
+vi /etc/openstack-dashboard/local_settings 
+tail -f {keystone,admin,error}*{.,_}log &
+history
+service httpd restart
+fg
+ls -ltr
+ls -ltr /etc/openstack-dashboard/
+ls -ltr /etc
+cd /etc/openstack-dashboard/
+vi local_settings 
+vi local_settings | grep -v '^$\|^#'
+cat local_settings | grep -v '^$\|^#'
+vi local_settings 
+vi local_settings | grep -v '^$\|^#'
+clear
+ catlocal_settings | grep -v '^$\|^#'
+ cat local_settings | grep -v '^$\|^#'
+ cat localsettings | grep -v '^$\|^#'
+ cat local settings |  grep -v '^$\|^#'
+ cat local_settings | grep -v '^$\|^#'
+exit
+ps -fauxww
+systemctl restart httpd
+cd /usr/share/openstack-dashboard/
+ls
+./manage.py 
+./manage.py  check
+./manage.py createcachetable
+./manage.py diffsettings
+./manage.py diffsettings | less
+openstack-service stop
+ps -fauxww
+cd /var/log/gnocchi/
+ls
+ls -ltr
+tail -f statsd.log
+systemctl status openstack-gnocchi-*
+systemctl status openstack-gnocchi-statsd.service 
+systemctl restart openstack-gnocchi-*
+systemctl restart openstack-gnocchi
+systemctl restart openstack-gnocchi-{api,metricd,statsd}
+systemctl restart openstack-gnocchi-{api,metricd,statsd}.service
+exit
+systemctl status openstack-gnocchi-{api,metricd,statsd}.service
+systemctl statusopenstack-gnocchi-api.service
+systemctl status openstack-gnocchi-api.service
+systemctl enable openstack-gnocchi-api.service
+systemctl start openstack-gnocchi-api.service
+systemctl status openstack-gnocchi-api.service
+openstack-status
+ls
+ls -ltr
+. admin-openrc.sh 
+openstack
+openstack-service status
+openstack-service start
+openstack-service status
+pwd
+cd /etc/openstack-dashboard/
+vi local_settings 
+reboot
+ls
+openstack-service status
+ps -fauxww
+systemctl restart httpd
+systemctl status httpd.service
+ps -fauxww
+systemctl start httpd.service
+journalctl -xe
+ps -fauxwww
+httpd
+ps -fauxww | less
+openstack-service stop
+ps -fauxww | less
+uptime
+service httpd status
+cd /var/log/httpd/
+cat error_log
+cat access_log
+ps -fauxww
+systemctl start h
+systemctl start cd /etc/
+cd /etc/
+ls
+cd httpd/
+ls
+systemctl status httpd.service y
+systemctl start httpd.service 
+ps -fauxww
+openstack-service start
+openstack-service status
+systemctl status httpd.service 
+service mysqld status
+systemctl status mysqld.service
+systemctl status mariadb.service 
+cd /var/log/horizon/
+ls
+ls -ltr 
+tail -f horizon.log
+. /root/keystonerc_admin 
+openstack
+cd /root/
+ls
+sh admin-openrc.sh 
+openstack
+cd /var/log/
+ls
+ls -ltr keystone/
+ps -fauxww
+ps -fauxww | grep keystone
+cd /etc/openstack-dashboard/
+ls
+ls -ltr
+diff local_settings /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/local_settings 
+cp -Rp /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/* /etc/openstack-dashboard/
+systemctl
+systemctl status mongod
+df
+cd /var/log/mongodb/
+ls
+ls -ltr
+tail -100 mongodb.log-20161201 
+cd /var/lib/
+ls
+ls -ltr
+cd mongodb/
+ls
+ls -ltr
+cd journal/
+ls -ltr
+cd ..
+ls
+cd ..
+ls
+reboot
+ps -faux
+cd /var/log/httpd/
+ls -ltr
+cat error_log
+ls -ltr
+tail -f horizon_error.log 
+tail -100 horizon_error.log 
+tail -100 default_error.log
+cat keystone_wsgi_main_error.log
+systemctl status httpd
+yum reinstall openstack-dashboard
+cd /etc/openstack-dashboard/
+ls
+ls -ltr
+mv openstack_dashboard/* .
+ls
+cd ..
+cd openstack-dashboard/
+ls 
+rm -rf * 
+cp -Rp /openstack_scratch/openstack-polaris/platform2.orbit8.com/openstack-dashboard/* .
+ls -ltr
+chown -R root:apache * 
+systemctl restart httpd
+journalctl -xe
+systemctl status
+systemctl
+systemctl restart mongod.service
+journalctl -xe
+cd /var/log/mongodb/
+ls
+ls -ltr
+cat mongodb.log
+mount
+mount | grep mongo
+pwd
+ls -al
+cd /var/lib/
+ls
+ls -ltr
+cd mongodb/
+ls
+rm -rf * 
+history | grep mongo
+ssh 10.1.10.5
+ssh 10.1.13.5
+vi /etc/fstab 
+mount -a
+mount
+systemctl restart mongogodb
+systemctl restart mongodb
+systemctl restart mongod.service 
+reboot
+ps -fauxww
+mount
+cd /var/lib/mongodb/
+ls -ltr
+cd ..
+ls -al
+systemctl
+ cd /var/log/httpd/
+ls
+ls -tlr
+cat error_log
+/usr/sbin/httpd -D FOREGROUND
+netstat -nap | grep 8041
+netstat -nape | grep 8041
+ps -fauxww | grep -i 2371
+systemctl stop openstack-gnocchi
+openstack-service stop gnocci
+openstack-service stop gnocchi
+systemctl restart httpd
+ps -faux
+openstack-status 
+openstack-service list
+ps -fauxww
+systemctl status
+systemctl
+. admin-openrc.sh 
+openstack
+vi /etc/openstack-dashboard/local_settings 
+service httpd restart
+systemctl status openstack-
+systemctl status openstack*
+systemctl status openstack* | more
+clear
+cd /openstack_scratch/
+cd openstack-polaris/
+ls
+history | grep git
+git checkout https://github.com/mrbriancollins/openstack-polaris.git
+cd ..
+git checkout https://github.com/mrbriancollins/openstack-polaris.git
+git clone https://github.com/mrbriancollins/openstack-polaris.git
+git clone https://github.com/mrbriancollins/openstack-polaris.git -f
+git clone https://github.com/mrbriancollins/openstack-polaris.git 
+cd openstack-polaris/
+ls
+rm -rf *
+cd ..
+git clone https://github.com/mrbriancollins/openstack-polaris.git 
+cd openstack-polaris/
+ls
+ls -al
+rm -rf *
+ls -al
+rm -rf .git
+cd ..
+git clone https://github.com/mrbriancollins/openstack-polaris.git 
+diff -y openstack-polaris/platform2.orbit8.com/openstack-dashboard/local_settings /etc/openstack-dashboard/local_settings 
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+ps -faux
+openstack-service restart
+openstack
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+openstack-service restart
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+openstack-service restart
+ping 10.1.14.2
+ping 10.1.14.11
+ping 10.1.14.1
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+cd /tmp/
+ls
+cd systemd-private-d95bff7948644edda21af9254888ecc4-httpd.service-qS1shc
+ls
+cd tmp/
+ls
+ls -al
+cd ..
+ls
+cd ..
+ls
+cd
+ls -la
+abrt-cli list
+ps -fauxww
+openstack-service status
+vi /etc/openstack-dashboard/local_settings 
+service httpd restart
+crontab -l
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+cd /openstack_scratch/openstack-polaris/
+git add *
+git commit
+git rm *.rpmnew
+git rm *.rpmsave
+git commit
+git push 
+ls
+w
+ps -fauxww
+ip netns
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ip a
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ping 50.205.206.42
+ip netns 
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ip a
+ip netns exec qrouter-0c63ff90-4f16-43c8-b4b1-dae79ce33e6b ping 
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ip a
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ping 10.1.15.1
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ping 10.1.15.25
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ping 10.1.15.10
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 ping 10.1.15.18
+ssh stack5
+date
+ssh stack5
+ssh stack4
+exit
+ls
+ssh stack1
+cd /openstack_scratch/openstack-polaris/platform2.orbit8.com/
+ls
+cd neutron/
+ls
+cd neutron/
+ls
+ls -ltr
+cd ..
+ls
+pwd
+ls -ltr
+pwd
+cd ..
+ls
+cd ..
+ls
+cd stack1.orbit8.com/neutron/
+ls
+cd ..
+scp neutron/* stack1:/etc/neutron/*
+scp -rp neutron/* root@stack1:/etc/neutron/
+ssh stack1
+ssh stack2
+ssh stack1
+ssh stack2
+ssh stack1
+ssh stack2
+ssh stack3
+ssh stack4
+ssh stack5
+cd ..
+ls
+git rm *.rpmsave
+crontab -l
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+git add *
+git rm *.rpm{new|save}
+git rm *.rpmnew
+git rm -f*.rpmsave
+git rm -f *.rpmsave
+git rm -f *.rpmnew
+git commit
+git push
+ls
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+cd /etc/
+find . -name *.rpmnew -print
+find /etc/ -name *.rpmnew -print
+find /etc/* -name *.rpmnew -print
+find /etc/*/ -name *.rpmnew -print
+find /etc/*/* -name *.rpmnew -print
+find . -name *.rpmsave -print
+rm aodh/*.rpmnew
+rm ceilometer/ceilometer.conf.rpmnew
+rm -rf cinder/cinder.conf.rpmnew gnocchi/gnocchi.conf.rpmnew neutron/dhcp_agent.ini.rpmnew neutron/l3_agent.ini.rpmnew neutron/neutron.conf.rpmnew neutron/neutron_lbaas.conf.rpmnew neutron/vpn_agent.ini.rpmnew neutron/neutron nova/nova.conf.rpmnew sahara/sahara.conf.rpmnew swift/container-server.conf.rpmnew sysconfig/iptables.rpmnew sysconfig/named.rpmsave trove/trove-taskmanager.conf.rpmnew
+ls -ltr
+chown -R root:neutron neutron
+rm named.conf.*
+man find
+find . -d -name *.rpmsave -print
+find . -depth -name *.rpmsave -print
+find /etc
+find / -depth -name *.rpmsave -print
+find /etc -depth -name *.rpmsave -print
+find /etc  -name *.rpmsave -print
+find /etc  -name *.rpmsave
+find /etc  -name *.rpmnew
+find /etc  -name *.rpm*
+ls
+find *.rpmsave
+find name .rpmsave
+find -name .rpmsave
+find -name *.rpmsave
+find -name *.rpmsave -print
+find -name *.rpmnew
+man find
+cd /etc/neutron/
+ls
+ls -ltr
+cd plugins/
+ls
+cd ml2/
+ls
+rm *.rpmnew
+ls -ltr
+crontab -l
+`cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+cd /openstack_scratch/openstack-polaris/
+ls
+git add *
+git rm -f *.rpmsave
+git rm -f *.rpmnew
+ssh platform2.orbit8.com rm /aodh/aodh.conf.rpmnew'
+ssh platform2.orbit8.com rm /ceilometer/ceilometer.conf.rpmnew'
+ssh platform2.orbit8.com rm /cinder/cinder.conf.rpmnew'
+ssh platform2.orbit8.com rm /gnocchi/gnocchi.conf.rpmnew'
+ssh platform2.orbit8.com rm /neutron/dhcp_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/l3_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron.conf.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/dhcp_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/l3_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/neutron.conf.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/neutron_lbaas.conf.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/plugins/ml2/ml2_conf.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/plugins/ml2/openvswitch_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron/vpn_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/neutron_lbaas.conf.rpmnew'
+ssh platform2.orbit8.com rm /neutron/plugins/ml2/ml2_conf.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/plugins/ml2/openvswitch_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /neutron/vpn_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /nova/nova.conf.rpmnew'
+ssh platform2.orbit8.com rm /sahara/sahara.conf.rpmnew'
+ssh platform2.orbit8.com rm /swift/container-server.conf.rpmnew'
+ssh platform2.orbit8.com rm /sysconfig/iptables.rpmnew'
+ssh platform2.orbit8.com rm /trove/trove-taskmanager.conf.rpmnew'
+ssh stack1.orbit8.com rm /ceilometer/ceilometer.conf.rpmnew'
+ssh stack1.orbit8.com rm /nova/nova.conf.rpmnew'
+ssh stack1.orbit8.com rm /sysconfig/iptables.rpmnew'
+ssh stack2.orbit8.com rm /ceilometer/ceilometer.conf.rpmnew'
+ssh stack2.orbit8.com rm /nova/nova.conf.rpmnew'
+ssh stack2.orbit8.com rm /sysconfig/iptables.rpmnew'
+ssh stack3.orbit8.com rm /ceilometer/ceilometer.conf.rpmnew'
+ssh stack3.orbit8.com rm /nova/nova.conf.rpmnew'
+ssh stack3.orbit8.com rm /sysconfig/iptables.rpmnew'
+ssh stack4.orbit8.com rm /ceilometer/ceilometer.conf.rpmnew'
+ssh stack4.orbit8.com rm /nova/nova.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/aodh/aodh.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/cinder/cinder.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/gnocchi/gnocchi.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/dhcp_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/l3_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/dhcp_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/l3_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/neutron.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/neutron_lbaas.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/plugins/ml2/ml2_conf.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/plugins/ml2/openvswitch_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron/vpn_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/neutron_lbaas.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/plugins/ml2/ml2_conf.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/plugins/ml2/openvswitch_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/neutron/vpn_agent.ini.rpmnew'
+ssh platform2.orbit8.com rm /etc/nova/nova.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/sahara/sahara.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/swift/container-server.conf.rpmnew'
+ssh platform2.orbit8.com rm /etc/sysconfig/iptables.rpmnew'
+ssh platform2.orbit8.com rm /etc/trove/trove-taskmanager.conf.rpmnew'
+ssh stack1.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew'
+ssh stack1.orbit8.com rm /etc/nova/nova.conf.rpmnew'
+ssh stack1.orbit8.com rm /etc/sysconfig/iptables.rpmnew'
+ssh stack2.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew'
+ssh stack2.orbit8.com rm /etc/nova/nova.conf.rpmnew'
+ssh stack2.orbit8.com rm /etc/sysconfig/iptables.rpmnew'
+ssh stack3.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew'
+ssh stack3.orbit8.com rm /etc/nova/nova.conf.rpmnew'
+ssh stack3.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh stack4.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew'
+ssh stack4.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh stack4.orbit8.com rm /etc/sysconfig/iptables.rpmnew'
+ssh stack4.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh platform2.orbit8.com rm /etc/aodh/aodh.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/cinder/cinder.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/gnocchi/gnocchi.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/dhcp_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/l3_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/dhcp_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/l3_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/neutron.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/neutron_lbaas.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/plugins/ml2/ml2_conf.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/plugins/ml2/openvswitch_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron/vpn_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/neutron_lbaas.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/plugins/ml2/ml2_conf.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/plugins/ml2/openvswitch_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/neutron/vpn_agent.ini.rpmnew
+ssh platform2.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/sahara/sahara.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/swift/container-server.conf.rpmnew
+ssh platform2.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh platform2.orbit8.com rm /etc/trove/trove-taskmanager.conf.rpmnew
+ssh stack1.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew
+ssh stack1.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh stack1.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh stack2.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew
+ssh stack2.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh stack2.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh stack3.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew
+ssh stack3.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh stack3.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+ssh stack4.orbit8.com rm /etc/ceilometer/ceilometer.conf.rpmnew
+ssh stack4.orbit8.com rm /etc/nova/nova.conf.rpmnew
+ssh stack4.orbit8.com rm /etc/sysconfig/iptables.rpmnew
+clear
+ssh platform2.orbit8.com "rm /etc/aodh/aodh.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/ceilometer/ceilometer.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/cinder/cinder.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/gnocchi/gnocchi.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/dhcp_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/l3_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/dhcp_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/l3_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/neutron.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/neutron_lbaas.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/plugins/ml2/ml2_conf.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/plugins/ml2/openvsw"itch_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron/vpn_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/neutron_lbaas.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/plugins/ml2/ml2_conf.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/plugins/ml2/openvsw"itch_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/neutron/vpn_agent.ini.rpmnew"
+ssh platform2.orbit8.com "rm /etc/nova/nova.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/sahara/sahara.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/swift/container-server.conf.rpmnew"
+ssh platform2.orbit8.com "rm /etc/sysconfig/iptables.rpmnew"
+ssh platform2.orbit8.com "rm /etc/trove/trove-taskmanager.conf.rpmnew"
+ssh stack1.orbit8.com "rm /etc/ceilometer/ceilometer.conf.rpmnew"
+ssh stack1.orbit8.com "rm /etc/nova/nova.conf.rpmnew"
+ssh stack1.orbit8.com "rm /etc/sysconfig/iptables.rpmnew"
+ssh stack2.orbit8.com "rm /etc/ceilometer/ceilometer.conf.rpmnew"
+ssh stack2.orbit8.com "rm /etc/nova/nova.conf.rpmnew"
+ssh stack2.orbit8.com "rm /etc/sysconfig/iptables.rpmnew"
+ssh stack3.orbit8.com "rm /etc/ceilometer/ceilometer.conf.rpmnew"
+ssh stack3.orbit8.com "rm /etc/nova/nova.conf.rpmnew"
+ssh stack3.orbit8.com "rm /etc/sysconfig/iptables.rpmnew"
+ssh stack4.orbit8.com "rm /etc/ceilometer/ceilometer.conf.rpmnew"
+ssh stack4.orbit8.com "rm /etc/nova/nova.conf.rpmnew"
+ssh stack4.orbit8.com "rm /etc/sysconfig/iptables.rpmnew"
+pwd
+ls
+git add * 
+git rm -f *.rpmnew
+git rm -f *.rpmsave
+crontab -l
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+git add *
+git commit
+cd /etc/neutron/
+ls
+ls -ltr
+cd /etc/neutron/
+ls -ltr
+systemctl status neutron-*
+ps -fauxww
+ls
+cd /etc/neutron/
+vi neutron.conf 
+vi plugins/ml2/ml2_conf.ini 
+systemctl status neutron-server.service 
+systemctl restart neutron-server.service 
+systemctl status neutron-server.service 
+pwd
+vi plugins/ml2/openvswitch_agent.ini 
+vi plugins/ml2/ml2_conf.ini 
+vi plugins/ml2/openvswitch_agent.ini 
+vi l3_agent.ini 
+vi dhcp_agent.ini 
+vi metadata_agent.ini 
+ssh stack1
+history
+for i in `cat /root/servers | grep-v platform `;do echo $i ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "sed -i 's/#enable_distributed_routing = false/enable_distributed_routing = true/g' /etc/neutron/plugins/ml2/openvswitch.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "sed -i 's/#enable_distributed_routing = false/enable_distributed_routing = true/g' /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep enable_distributed_routing /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep l2pop /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep l2_pop /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "sed -i 's/l2_population = False/l2_population = true/g' /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep l2_pop /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep arp /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "sed -i 's/#arp_responder = false/arp_responder = true/g' /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep arp /etc/neutron/plugins/ml2/openvswitch_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep agent_mode /etc/neutron/l3_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "sed -i 's/#agent_mode = legacy/agent_mode = dvr/g' /etc/neutron/l3_agent.ini" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "grep agent_mode /etc/neutron/l3_agent.ini" ;done
+ssh stack1
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl status neutron-l3" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl status neutron-*" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl status neutron-l3-agent" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl enable neutron-l3-agent" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl enable neutron-metadata-agent" ;done
+for i in `cat /root/servers | grep -v platform `;do echo $i; ssh $i "systemctl restart neutron-*" ;done
+for i in `cat /root/servers | sort -r`;do echo $i; ssh $i "openstack-service restart" ;done
+sh /root/admin-openrc.sh 
+openstack
+sh /root/admin-openrc.sh 
+openstack
+ls
+ls -ltr
+cat /root/admin-openrc.sh 
+sh /root/admin-openrc.sh 
+cinder volume-list
+cinder volume
+neutron router-list
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+ps -fauxww
+vi /etc/openstack-dashboard/local_settings 
+exit
+systemctl restart httpd
+ps -fauxww
+crontab -l 
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+cd /openstack_scratch/openstack-polaris/
+git add 
+git add  *
+git rm -f *.rpm*
+git rm -f *.rpmsave
+git rm -f *rpmsave
+git rm -f *rpmnew
+git commit
+git push
+vi /etc/openstack-dashboard/local_settings 
+systemctl restart httpd
+for i in `cat /root/servers | sort -r` ;do echo $i; rsync -rav $i:/etc/{nova,neutron,glance,cinder,keystone,openstack-dashboard,httpd,fstab,sysconfig,ssh,pki,aodh,gnocchi,heat,haproxy,keepalived,my.cnf,nrpe.d,ntp,pkcs11,puppet,python,redis,sahara,ssl,swift,trove,ceilometer,designate,tripleo} /openstack_scratch/openstack-polaris/$i/ ;done
+git add *
+sh /root/admin-openrc.sh 
+openstack
+ls
+cd
+ls
+exit
+history
+cd /etc/neutron/
+ls
+ls -ltr
+chmod 644 metadata_agent.ini 
+ls -ltr
+openstack-service list
+openstack-service status neutron
+openstack-service status neutron-metadata-agent.service
+cd ..
+ls
+systemctl status neutron-metadata-agent.service 
+systemctl status neutron-metadata-agent.service -l
+tail -f /var/log/neutron/metadata-agent.log 
+cd /etc/neutron/
+ls
+vi metadata_agent.ini 
+. /root/keystonerc_admin 
+. /root/admin-openrc.sh 
+neutron agent-list
+tail -f /var/log/neutron/metadata-agent.log 
+vi /etc/neutron/metadata_agent.ini 
+systemctl restart neutron-metadata-agent.service 
+systemctl status neutron-metadata-agent.service 
+systemctl status neutron-metadata-agent.service -l
+ls
+tail -f /var/log/neutron/metadata-agent.log 
+tail -F /var/log/neutron/metadata-agent.log &
+systemctl restart neutron-metadata-agent.service 
+fg
+ssh stack1
+for i in `cat /root/servers | grep -v platform`; do echo $i ; done
+for i in `cat /root/servers | grep -v platform`; do echo $i; scp /etc/neutron/metadata_agent.ini $i:/etc/neuton/ ; done
+for i in `cat /root/servers | grep -v platform`; do echo $i; scp /etc/neutron/metadata_agent.ini $i:/etc/neutron/ ; done
+for i in `cat /root/servers | grep -v platform`; do echo $i; ssh $i systemctl restart neutron-metadata-agent ; done
+for i in `cat /root/servers | grep -v platform`; do echo $i; ssh $i systemctl status neutron-metadata-agent ; done
+for i in `cat /root/servers | grep -v platform`; do echo $i; ssh $i tail -100 /var/log/neutron/metadata-agent.log ; done
+fg
+for i in `cat /root/servers | grep -v platform`; do echo $i; ssh $i tail -100 /var/log/neutron/metadata-agent.log ; done
+for i in `cat /root/servers ; do echo $i; ssh $i tail -100 /var/log/neutron/metadata-agent.log ; done
+for i in `cat /root/servers` ; do echo $i; ssh $i tail -100 /var/log/neutron/metadata-agent.log ; done
+for i in `cat /root/servers | sort -r` ; do echo $i; ssh $i tail -100 /var/log/neutron/metadata-agent.log ; done
+netstat -nape
+netstat -nape | grep -i metadata
+netstat -nape grep 87
+pwd
+cd /var/log/neutron/
+ls
+ls -ltr
+tail -f server.log
+ls
+tail -f metadata-agent.log 
+fg
+clear
+exit
+ls
+rm admin-openrc.sh 
+rm foo 
+rm keystonerc_*
+ls
+rm local_settings.rpmsave logs_debug.tar.gz nova.conf pack 
+ls -ltr
+cd /etc/neutron/
+vi metadata_agent.ini 
+history | grep scp
+for i in `cat /root/servers | grep -v platform`; do echo $i; scp /etc/neutron/metadata_agent.ini $i:/etc/neutron/ ; done
+ssh stack1
+history | grep restart
+for i in `cat /root/servers | grep -v platform`; do echo $i; ssh $i systemctl restart neutron-metadata-agent ; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl restart neutron-metadata-agent ; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl restart neutron ; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl restart 
+vi dhcp_agent.ini 
+for i in `cat /root/servers | grep -v platform`; do echo $i; scp /etc/neutron/dhcp_agent.ini $i:/etc/neutron/ ; done
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl restart neutron-dhcp-agent ; done 
+vi l3_agent.ini 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl restart neutron-l3-agent ; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i openstack-service restart ; done 
+iptables -L
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i ip netns; done 
+ip netns exec qrouter-7f3f2f55-9e6c-49be-88a9-a8d8800312cf iptable -L
+ip netns exec qrouter-7f3f2f55-9e6c-49be-88a9-a8d8800312cf iptables -L
+ip netns
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 iptables -L
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 netstat -nape | grep LISTEN
+ip netns 
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 cat /etc/resolv.conf
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 curl 169.254.169.254/2009-04-04/instance-id
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 wget 169.254.169.254/2009-04-04/instance-id
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 wget https://169.254.169.254/2009-04-04/instance-id
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 wget http://169.254.169.254:9597/2009-04-04/instance-id
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 wget http://169.254.169.254:9697/2009-04-04/instance-id
+ip netns exec qrouter-894c8274-ec3e-4d90-b799-bd1ec0bf0ea4 wget http://127.0.0.1:9697/2009-04-04/instance-id
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl enable ml2 ; done 
+systemctl status neutron-
+ls -ltr
+ip netns
+ip netns exec snat-7f3f2f55-9e6c-49be-88a9-a8d8800312cf ip a
+ip netns exec snat-7f3f2f55-9e6c-49be-88a9-a8d8800312cf ifconfig
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl enable neutron-metadata-agent.service ; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl enable neutron-l3-agent.service; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i openstack-service restart; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i systemctl enable neutron-dhcp-agent.service; done 
+for i in `cat /root/servers | sort -r`; do echo $i; ssh $i openstack-service restart; done 
+sudo grep -E -i "error|trace" /var/log/neutron/metadata-agent.log /var/log/neutron/neutron-ns-metadata-proxy-*
+ls -ltr
+cd /var/log/neutron/
+ls -ltr
+tail -100 neutron-ns-metadata-proxy-5d83c9be-165f-40ec-b5c8-18881dc00d24.log
+ls
+ip netns
+ls
+ls -ltr
+rm neutron-ns-metadata-proxy-*
+rm -f neutron-ns-metadata-proxy-*
+ls 
+rm -f *
+ls
+cat server.log 
+ls -ltr
+openstack-service restart
+ls -ltr
+tail -100 neutron-ns-metadata-proxy-5d83c9be-165f-40ec-b5c8-18881dc00d24.log 
+cat /etc/nova/nova.conf  | grep -v ^# | grep -v ^$ | grep metadata
+cat /etc/neutron/metadata_agent.ini | grep -v ^# | grep -v ^$ | grep metadata
+cat /etc/neutron/l3_agent.ini | grep -v ^# | grep -v ^$
+tail -100 neutron-ns-metadata-proxy-5d83c9be-165f-40ec-b5c8-18881dc00d24.log 
+ip netns
+ls -ltr
+neutron 
+openstack
+ps -fauxww | grep 80
+netstat -nape | grep 80
+vi /etc/neutron/metadata_agent.ini 
+openstack-service restart neutron
+cd /var/log/neutron/
+ls
+ls -ltr
+tail -100 neutron-ns-metadata-proxy-5d83c9be-165f-40ec-b5c8-18881dc00d24.log 
+ls -ltr
+exit
+ps -fauxww
+qexit
+history | grep enable
+ systemctl stop neutron-metadata-agent.service
+ systemctl disable neutron-metadata-agent.service
+ls -ltr
+cd /var/log/neutron/
+ls
+ls -ltr
+cat neutron-ns-metadata-proxy-5d83c9be-165f-40ec-b5c8-18881dc00d24.log 
+ls
+systemctl
+history | grep enable
+ssh stack1
+ssh stack2
+ssh stack3
+ssh stack4
+history | grep for
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl disable neutron-dhcp-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl disable neutron-metadata-agent.service; done
+ls
+cd
+ls
+systemctl enable neutron-metadata-agent.service 
+reboot
+openstack-status 
+systemctl
+cd /openstack_scratch/openstack-polaris/
+ls
+cd platform2.orbit8.com/
+ls
+cd neutron/
+ls
+ls -ltr
+cp metadata_agent.ini /etc/neutron/
+systemctl disable neutron-metadata-agent.service 
+mount
+openstack-service stop
+ps -fauxww
+reboot
+ps -fauxww
+systemctl
+systemctl stop openstack-gnocchi-api.service
+systemctl restart httpd
+systemctl
+systemctl restart mongod.service
+cd /var/log/
+ls
+ls -ltr
+cd httpd/
+ls
+ls -ltr
+systemctl
+systemctl disable openstack-gnocchi-api.service
+ps -fauxww
+uptime
+reboot
+ps -fauxww
+openstack-status 
+ip netns
+ssh stack1
+ip netns
+ls
+vi /etc/neutron/neutron.conf 
+ip netns
+for i in `cat servers`;do ip netns ;done
+for i in `cat servers`;do ps -fauxww | grep -i metadata ;done
+clear
+for i in `cat servers`;do ssh $i ip netns ;done
+wget 127.0.0.1/
+cat index.html 
+ifconfig
+hisotory
+history
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl disable neutron-dhcp-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl disable neutron-metadata-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl enable neutron-l3-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl stop neutron-metadata-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl stop neutron-dhcp-agent.service; done
+for i in `cat /root/servers | grep -v platform2`; do echo $i; ssh $i systemctl start neutron-l3-agent.service; done
+exit
+man history
+man date
+history
+history -w /openstack_scratch/openstack-polaris/platform2.orbit8.com/command_hist.`date`
+ls -altr /openstack_scratch/openstack-polaris/platform2.orbit8.com/
+man date
+date %D
+date -s %D
+'date %D'
+
+history -w /openstack_scratch/openstack-polaris/platform2.orbit8.com/"command_hist.backup.$(date +%F_%R)"
