@@ -1,0 +1,20 @@
+- also_notifies: []
+  attributes: {}
+  description: Pool built from configuration on platform2.orbit8.com
+  id: 794ccc2c-d751-44fe-b57f-8894c9f5c842
+  nameservers:
+  - host: 10.1.13.251
+    port: 53
+  ns_records:
+  - hostname: platform2.orbit8.com.
+    priority: 10
+  targets:
+  - masters:
+    - host: 10.1.13.251
+      port: 5354
+    options:
+      rndc_config_file: /etc/rndc.conf
+      rndc_host: 10.1.13.251
+      rndc_key_file: /etc/rndc.key
+      rndc_port: '953'
+    type: bind9

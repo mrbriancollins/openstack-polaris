@@ -1,0 +1,13 @@
+openstack-ceilometer-common.noarch
+openstack-ceilometer-compute.noarch
+openstack-ceilometer-polling.noarch
+openstack-neutron.noarch
+openstack-neutron-common.noarch
+openstack-neutron-openvswitch.noarch
+openstack-nova-common.noarch 
+openstack-nova-compute.noarch
+openstack-packstack.noarch
+openstack-packstack-puppet.noarch
+openstack-puppet-modules.noarch
+openstack-selinux.noarch
+openstack-utils.noarch

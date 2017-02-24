@@ -1,0 +1,240 @@
+  UNIT                                                                                                  LOAD   ACTIVE SUB       DESCRIPTION
+  proc-sys-fs-binfmt_misc.automount                                                                     loaded active waiting   Arbitrary Executable File Formats File System Automount Point
+  sys-devices-pci0000:00-0000:00:01.0-0000:01:00.0-net-em1.device                                       loaded active plugged   /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/net/em1
+  sys-devices-pci0000:00-0000:00:01.0-0000:01:00.1-net-em2.device                                       loaded active plugged   /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.1/net/em2
+  sys-devices-pci0000:00-0000:00:03.0-0000:02:00.0-net-em3.device                                       loaded active plugged   /sys/devices/pci0000:00/0000:00:03.0/0000:02:00.0/net/em3
+  sys-devices-pci0000:00-0000:00:03.0-0000:02:00.1-net-em4.device                                       loaded active plugged   /sys/devices/pci0000:00/0000:00:03.0/0000:02:00.1/net/em4
+  sys-devices-pci0000:00-0000:00:1c.0-0000:03:00.0-host0-target0:2:0-0:2:0:0-block-sda-sda1.device      loaded active plugged   PERC_H700 1
+  sys-devices-pci0000:00-0000:00:1c.0-0000:03:00.0-host0-target0:2:0-0:2:0:0-block-sda-sda2.device      loaded active plugged   LVM PV BDzvZl-oxc4-k69W-Q2uX-DYzn-ZtIN-QItL1T on /dev/sda2 2
+  sys-devices-pci0000:00-0000:00:1c.0-0000:03:00.0-host0-target0:2:0-0:2:0:0-block-sda.device           loaded active plugged   PERC_H700
+  sys-devices-pci0000:00-0000:00:1d.7-usb2-2\x2d3-2\x2d3:1.0-host1-target1:0:0-1:0:0:0-block-sdc.device loaded active plugged   LCDRIVE
+  sys-devices-pci0000:00-0000:00:1d.7-usb2-2\x2d3-2\x2d3:1.1-host2-target2:0:0-2:0:0:1-block-sdb.device loaded active plugged   Virtual_Floppy
+  sys-devices-platform-serial8250-tty-ttyS2.device                                                      loaded active plugged   /sys/devices/platform/serial8250/tty/ttyS2
+  sys-devices-platform-serial8250-tty-ttyS3.device                                                      loaded active plugged   /sys/devices/platform/serial8250/tty/ttyS3
+  sys-devices-pnp0-00:04-tty-ttyS0.device                                                               loaded active plugged   /sys/devices/pnp0/00:04/tty/ttyS0
+  sys-devices-pnp0-00:05-tty-ttyS1.device                                                               loaded active plugged   /sys/devices/pnp0/00:05/tty/ttyS1
+  sys-devices-virtual-block-dm\x2d0.device                                                              loaded active plugged   /sys/devices/virtual/block/dm-0
+  sys-devices-virtual-block-dm\x2d1.device                                                              loaded active plugged   /sys/devices/virtual/block/dm-1
+  sys-devices-virtual-block-loop0.device                                                                loaded active plugged   /sys/devices/virtual/block/loop0
+  sys-devices-virtual-net-bond0.10.device                                                               loaded active plugged   /sys/devices/virtual/net/bond0.10
+  sys-devices-virtual-net-bond0.13.device                                                               loaded active plugged   /sys/devices/virtual/net/bond0.13
+  sys-devices-virtual-net-bond0.15.device                                                               loaded active plugged   /sys/devices/virtual/net/bond0.15
+  sys-devices-virtual-net-bond0.device                                                                  loaded active plugged   /sys/devices/virtual/net/bond0
+  sys-devices-virtual-net-br\x2d10.device                                                               loaded active plugged   /sys/devices/virtual/net/br-10
+  sys-devices-virtual-net-br\x2d15.device                                                               loaded active plugged   /sys/devices/virtual/net/br-15
+  sys-devices-virtual-net-br\x2dex.device                                                               loaded active plugged   /sys/devices/virtual/net/br-ex
+  sys-devices-virtual-net-br\x2dint.device                                                              loaded active plugged   /sys/devices/virtual/net/br-int
+  sys-devices-virtual-net-br\x2dtun.device                                                              loaded active plugged   /sys/devices/virtual/net/br-tun
+  sys-devices-virtual-net-ovs\x2dsystem.device                                                          loaded active plugged   /sys/devices/virtual/net/ovs-system
+  sys-module-configfs.device                                                                            loaded active plugged   /sys/module/configfs
+  sys-module-fuse.device                                                                                loaded active plugged   /sys/module/fuse
+  sys-module-vport_gre.device                                                                           loaded active plugged   /sys/module/vport_gre
+  sys-module-vport_vxlan.device                                                                         loaded active plugged   /sys/module/vport_vxlan
+  sys-subsystem-net-devices-bond0.10.device                                                             loaded active plugged   /sys/subsystem/net/devices/bond0.10
+  sys-subsystem-net-devices-bond0.13.device                                                             loaded active plugged   /sys/subsystem/net/devices/bond0.13
+  sys-subsystem-net-devices-bond0.15.device                                                             loaded active plugged   /sys/subsystem/net/devices/bond0.15
+  sys-subsystem-net-devices-bond0.device                                                                loaded active plugged   /sys/subsystem/net/devices/bond0
+  sys-subsystem-net-devices-br\x2d10.device                                                             loaded active plugged   /sys/subsystem/net/devices/br-10
+  sys-subsystem-net-devices-br\x2d15.device                                                             loaded active plugged   /sys/subsystem/net/devices/br-15
+  sys-subsystem-net-devices-br\x2dex.device                                                             loaded active plugged   /sys/subsystem/net/devices/br-ex
+  sys-subsystem-net-devices-br\x2dint.device                                                            loaded active plugged   /sys/subsystem/net/devices/br-int
+  sys-subsystem-net-devices-br\x2dtun.device                                                            loaded active plugged   /sys/subsystem/net/devices/br-tun
+  sys-subsystem-net-devices-em1.device                                                                  loaded active plugged   /sys/subsystem/net/devices/em1
+  sys-subsystem-net-devices-em2.device                                                                  loaded active plugged   /sys/subsystem/net/devices/em2
+  sys-subsystem-net-devices-em3.device                                                                  loaded active plugged   /sys/subsystem/net/devices/em3
+  sys-subsystem-net-devices-em4.device                                                                  loaded active plugged   /sys/subsystem/net/devices/em4
+  sys-subsystem-net-devices-ovs\x2dsystem.device                                                        loaded active plugged   /sys/subsystem/net/devices/ovs-system
+  -.mount                                                                                               loaded active mounted   /
+  boot.mount                                                                                            loaded active mounted   /boot
+  dev-hugepages.mount                                                                                   loaded active mounted   Huge Pages File System
+  dev-mqueue.mount                                                                                      loaded active mounted   POSIX Message Queue File System
+  openstack_scratch.mount                                                                               loaded active mounted   /openstack_scratch
+  proc-fs-nfsd.mount                                                                                    loaded active mounted   NFSD configuration filesystem
+  run-netns.mount                                                                                       loaded active mounted   /run/netns
+  run-user-0.mount                                                                                      loaded active mounted   /run/user/0
+  srv-node-swiftloopback.mount                                                                          loaded active mounted   /srv/node/swiftloopback
+  sys-fs-fuse-connections.mount                                                                         loaded active mounted   FUSE Control File System
+  sys-kernel-config.mount                                                                               loaded active mounted   Configuration File System
+  sys-kernel-debug.mount                                                                                loaded active mounted   Debug File System
+  var-lib-cinder-conversion.mount                                                                       loaded active mounted   /var/lib/cinder/conversion
+  var-lib-cinder-mnt-0601c4f1678c9d0aac3f1f704a4cd118.mount                                             loaded active mounted   /var/lib/cinder/mnt/0601c4f1678c9d0aac3f1f704a4cd118
+  var-lib-cinder-mnt-96cee0347ebad431ec6a9adc9cc67830.mount                                             loaded active mounted   /var/lib/cinder/mnt/96cee0347ebad431ec6a9adc9cc67830
+  var-lib-glance.mount                                                                                  loaded active mounted   /var/lib/glance
+  var-lib-mongodb.mount                                                                                 loaded active mounted   /var/lib/mongodb
+  var-lib-nfs-rpc_pipefs.mount                                                                          loaded active mounted   RPC Pipe File System
+  var-lib-nova-instances.mount                                                                          loaded active mounted   /var/lib/nova/instances
+  brandbot.path                                                                                         loaded active waiting   Flexible branding
+  systemd-ask-password-plymouth.path                                                                    loaded active waiting   Forward Password Requests to Plymouth Directory Watch
+  systemd-ask-password-wall.path                                                                        loaded active waiting   Forward Password Requests to Wall Directory Watch
+  session-1.scope                                                                                       loaded active running   Session 1 of user root
+  abrt-ccpp.service                                                                                     loaded active exited    Install ABRT coredump hook
+  abrt-oops.service                                                                                     loaded active running   ABRT kernel log watcher
+  abrtd.service                                                                                         loaded active running   ABRT Automated Bug Reporting Tool
+  atd.service                                                                                           loaded active running   Job spooling tools
+  auditd.service                                                                                        loaded active running   Security Auditing Service
+  chronyd.service                                                                                       loaded active running   NTP client/server
+  crond.service                                                                                         loaded active running   Command Scheduler
+  dbus.service                                                                                          loaded active running   D-Bus System Message Bus
+  designate-agent.service                                                                               loaded active running   OpenStack Designate agent
+  designate-api.service                                                                                 loaded active running   OpenStack Designate API service
+  designate-central.service                                                                             loaded active running   OpenStack Designate Central service
+  designate-mdns.service                                                                                loaded active running   OpenStack Designate Mini DNS service
+  designate-pool-manager.service                                                                        loaded active running   OpenStack Designate Pool Manager service
+  designate-sink.service                                                                                loaded active running   OpenStack Designate Sink service
+  designate-zone-manager.service                                                                        loaded active running   OpenStack Designate Zone Manager service
+  epmd@0.0.0.0.service                                                                                  loaded active running   Erlang Port Mapper Daemon
+  getty@tty1.service                                                                                    loaded active running   Getty on tty1
+  gssproxy.service                                                                                      loaded active running   GSSAPI Proxy Daemon
+[1;31m●[0m [1;31mhttpd.service                                                                                        [0m loaded [1;31mfailed failed   [0m The Apache HTTP Server
+  iptables.service                                                                                      loaded active exited    IPv4 firewall with iptables
+  irqbalance.service                                                                                    loaded active running   irqbalance daemon
+  iscsi-shutdown.service                                                                                loaded active exited    Logout off all iSCSI sessions on shutdown
+[1;31m●[0m [1;31mkdump.service                                                                                        [0m loaded [1;31mfailed failed   [0m Crash recovery kernel arming
+  kmod-static-nodes.service                                                                             loaded active exited    Create list of required static device nodes for the current kernel
+  libstoragemgmt.service                                                                                loaded active running   libstoragemgmt plug-in server daemon
+  lvm2-lvmetad.service                                                                                  loaded active running   LVM2 metadata daemon
+  lvm2-monitor.service                                                                                  loaded active exited    Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+  lvm2-pvscan@8:2.service                                                                               loaded active exited    LVM2 PV scan on device 8:2
+  mariadb.service                                                                                       loaded active running   MariaDB 10.1 database server
+  memcached.service                                                                                     loaded active running   Memcached
+[1;31m●[0m [1;31mmongod.service                                                                                       [0m loaded [1;31mfailed failed   [0m High-performance, schema-free document-oriented database
+  nagios.service                                                                                        loaded active running   SYSV: Starts and stops the Nagios monitor
+  network.service                                                                                       loaded active running   LSB: Bring up/down networking
+  neutron-dhcp-agent.service                                                                            loaded active running   OpenStack Neutron DHCP Agent
+  neutron-l3-agent.service                                                                              loaded active running   OpenStack Neutron Layer 3 Agent
+  neutron-lbaas-agent.service                                                                           loaded active running   OpenStack Neutron Load Balancing as a Service Agent
+  neutron-metering-agent.service                                                                        loaded active running   OpenStack Neutron Metering Agent
+  neutron-openvswitch-agent.service                                                                     loaded active running   OpenStack Neutron Open vSwitch Agent
+  neutron-ovs-cleanup.service                                                                           loaded active exited    OpenStack Neutron Open vSwitch Cleanup Utility
+  neutron-server.service                                                                                loaded active running   OpenStack Neutron Server
+  neutron-vpn-agent.service                                                                             loaded active running   OpenStack Neutron VPN as a Service Agent
+  nfs-config.service                                                                                    loaded active exited    Preprocess NFS configuration
+  nrpe.service                                                                                          loaded active running   NRPE
+  openstack-aodh-evaluator.service                                                                      loaded active running   OpenStack Alarm evaluator service
+  openstack-aodh-listener.service                                                                       loaded active running   OpenStack Alarm listener service
+  openstack-aodh-notifier.service                                                                       loaded active running   OpenStack Alarm notifier service
+  openstack-ceilometer-central.service                                                                  loaded active running   OpenStack ceilometer central agent
+  openstack-ceilometer-collector.service                                                                loaded active running   OpenStack ceilometer collection service
+  openstack-ceilometer-notification.service                                                             loaded active running   OpenStack ceilometer notification agent
+  openstack-cinder-api.service                                                                          loaded active running   OpenStack Cinder API Server
+  openstack-cinder-backup.service                                                                       loaded active running   OpenStack Cinder Backup Server
+  openstack-cinder-scheduler.service                                                                    loaded active running   OpenStack Cinder Scheduler Server
+  openstack-cinder-volume.service                                                                       loaded active running   OpenStack Cinder Volume Server
+  openstack-glance-api.service                                                                          loaded active running   OpenStack Image Service (code-named Glance) API server
+  openstack-glance-registry.service                                                                     loaded active running   OpenStack Image Service (code-named Glance) Registry server
+  openstack-gnocchi-api.service                                                                         loaded active running   OpenStack ceilometer API service
+  openstack-gnocchi-metricd.service                                                                     loaded active running   OpenStack gnocchi metricd service
+  openstack-gnocchi-statsd.service                                                                      loaded active running   OpenStack gnocchi statsd service
+  openstack-heat-api.service                                                                            loaded active running   OpenStack Heat API Service
+  openstack-heat-engine.service                                                                         loaded active running   Openstack Heat Engine Service
+  openstack-nova-api.service                                                                            loaded active running   OpenStack Nova API Server
+  openstack-nova-cert.service                                                                           loaded active running   OpenStack Nova Cert Server
+  openstack-nova-conductor.service                                                                      loaded active running   OpenStack Nova Conductor Server
+  openstack-nova-consoleauth.service                                                                    loaded active running   OpenStack Nova VNC console auth Server
+  openstack-nova-novncproxy.service                                                                     loaded active running   OpenStack Nova NoVNC Proxy Server
+  openstack-nova-scheduler.service                                                                      loaded active running   OpenStack Nova Scheduler Server
+  openstack-sahara-api.service                                                                          loaded active running   Sahara API Server
+  openstack-sahara-engine.service                                                                       loaded active running   Sahara Engine Server
+  openstack-swift-account-auditor.service                                                               loaded active running   OpenStack Object Storage (swift) - Account Auditor
+  openstack-swift-account-reaper.service                                                                loaded active running   OpenStack Object Storage (swift) - Account Reaper
+  openstack-swift-account-replicator.service                                                            loaded active running   OpenStack Object Storage (swift) - Account Replicator
+  openstack-swift-account.service                                                                       loaded active running   OpenStack Object Storage (swift) - Account Server
+  openstack-swift-container-auditor.service                                                             loaded active running   OpenStack Object Storage (swift) - Container Auditor
+  openstack-swift-container-replicator.service                                                          loaded active running   OpenStack Object Storage (swift) - Container Replicator
+  openstack-swift-container-updater.service                                                             loaded active running   OpenStack Object Storage (swift) - Container Updater
+  openstack-swift-container.service                                                                     loaded active running   OpenStack Object Storage (swift) - Container Server
+  openstack-swift-object-auditor.service                                                                loaded active running   OpenStack Object Storage (swift) - Object Auditor
+  openstack-swift-object-expirer.service                                                                loaded active running   OpenStack Object Storage (swift) - Object Expirer
+  openstack-swift-object-replicator.service                                                             loaded active running   OpenStack Object Storage (swift) - Object Replicator
+  openstack-swift-object-updater.service                                                                loaded active running   OpenStack Object Storage (swift) - Object Updater
+  openstack-swift-object.service                                                                        loaded active running   OpenStack Object Storage (swift) - Object Server
+  openstack-swift-proxy.service                                                                         loaded active running   OpenStack Object Storage (swift) - Proxy Server
+  openstack-trove-api.service                                                                           loaded active running   OpenStack Trove API Service
+  openstack-trove-conductor.service                                                                     loaded active running   OpenStack Trove Conductor Service
+  openstack-trove-taskmanager.service                                                                   loaded active running   OpenStack Trove taskmanager service
+  openvswitch-nonetwork.service                                                                         loaded active exited    Open vSwitch Internal Unit
+  openvswitch.service                                                                                   loaded active exited    Open vSwitch
+[1;31m●[0m [1;31mpostfix.service                                                                                      [0m loaded [1;31mfailed failed   [0m Postfix Mail Transport Agent
+  rabbitmq-server.service                                                                               loaded active running   RabbitMQ broker
+  redis.service                                                                                         loaded active running   Redis persistent key-value database
+  rhel-dmesg.service                                                                                    loaded active exited    Dump dmesg to /var/log/dmesg
+  rhel-import-state.service                                                                             loaded active exited    Import network configuration from initramfs
+  rhel-loadmodules.service                                                                              loaded active exited    Load legacy module configuration
+  rhel-readonly.service                                                                                 loaded active exited    Configure read-only root support
+[1;31m●[0m [1;31mrngd.service                                                                                         [0m loaded [1;31mfailed failed   [0m Hardware RNG Entropy Gatherer Daemon
+  rpc-statd.service                                                                                     loaded active running   NFS status monitor for NFSv2/3 locking.
+  rpcbind.service                                                                                       loaded active running   RPC bind service
+  rsyslog.service                                                                                       loaded active running   System Logging Service
+  smartd.service                                                                                        loaded active running   Self Monitoring and Reporting Technology (SMART) Daemon
+  sshd.service                                                                                          loaded active running   OpenSSH server daemon
+  sysstat.service                                                                                       loaded active exited    Resets System Activity Logs
+  systemd-fsck-root.service                                                                             loaded active exited    File System Check on Root Device
+  systemd-fsck@dev-disk-by\x2duuid-3f93d24e\x2deb51\x2d4027\x2d995f\x2dff4bd06b92ae.service             loaded active exited    File System Check on /dev/disk/by-uuid/3f93d24e-eb51-4027-995f-ff4bd06b92ae
+  systemd-journal-flush.service                                                                         loaded active exited    Flush Journal to Persistent Storage
+  systemd-journald.service                                                                              loaded active running   Journal Service
+  systemd-logind.service                                                                                loaded active running   Login Service
+  systemd-random-seed.service                                                                           loaded active exited    Load/Save Random Seed
+  systemd-readahead-collect.service                                                                     loaded active exited    Collect Read-Ahead Data
+  systemd-readahead-replay.service                                                                      loaded active exited    Replay Read-Ahead Data
+  systemd-remount-fs.service                                                                            loaded active exited    Remount Root and Kernel File Systems
+  systemd-sysctl.service                                                                                loaded active exited    Apply Kernel Variables
+  systemd-tmpfiles-setup-dev.service                                                                    loaded active exited    Create Static Device Nodes in /dev
+  systemd-tmpfiles-setup.service                                                                        loaded active exited    Create Volatile Files and Directories
+  systemd-udev-settle.service                                                                           loaded active exited    udev Wait for Complete Device Initialization
+  systemd-udev-trigger.service                                                                          loaded active exited    udev Coldplug all Devices
+  systemd-udevd.service                                                                                 loaded active running   udev Kernel Device Manager
+  systemd-update-utmp.service                                                                           loaded active exited    Update UTMP about System Boot/Shutdown
+  systemd-user-sessions.service                                                                         loaded active exited    Permit User Sessions
+  systemd-vconsole-setup.service                                                                        loaded active exited    Setup Virtual Console
+  tuned.service                                                                                         loaded active running   Dynamic System Tuning Daemon
+  xinetd.service                                                                                        loaded active running   Xinetd A Powerful Replacement For Inetd
+  -.slice                                                                                               loaded active active    Root Slice
+  system-epmd.slice                                                                                     loaded active active    system-epmd.slice
+  system-getty.slice                                                                                    loaded active active    system-getty.slice
+  system-lvm2\x2dpvscan.slice                                                                           loaded active active    system-lvm2\x2dpvscan.slice
+  system-systemd\x2dfsck.slice                                                                          loaded active active    system-systemd\x2dfsck.slice
+  system.slice                                                                                          loaded active active    System Slice
+  user-0.slice                                                                                          loaded active active    user-0.slice
+  user.slice                                                                                            loaded active active    User and Session Slice
+  dbus.socket                                                                                           loaded active running   D-Bus System Message Bus Socket
+  dm-event.socket                                                                                       loaded active listening Device-mapper event daemon FIFOs
+  epmd@0.0.0.0.socket                                                                                   loaded active running   Erlang Port Mapper Daemon Activation Socket
+  iscsid.socket                                                                                         loaded active listening Open-iSCSI iscsid Socket
+  iscsiuio.socket                                                                                       loaded active listening Open-iSCSI iscsiuio Socket
+  lvm2-lvmetad.socket                                                                                   loaded active running   LVM2 metadata daemon socket
+  lvm2-lvmpolld.socket                                                                                  loaded active listening LVM2 poll daemon socket
+  rpcbind.socket                                                                                        loaded active running   RPCbind Server Activation Socket
+  systemd-initctl.socket                                                                                loaded active listening /dev/initctl Compatibility Named Pipe
+  systemd-journald.socket                                                                               loaded active running   Journal Socket
+  systemd-shutdownd.socket                                                                              loaded active listening Delayed Shutdown Socket
+  systemd-udevd-control.socket                                                                          loaded active running   udev Control Socket
+  systemd-udevd-kernel.socket                                                                           loaded active running   udev Kernel Socket
+  dev-mapper-centos\x2dswap.swap                                                                        loaded active active    /dev/mapper/centos-swap
+  basic.target                                                                                          loaded active active    Basic System
+  cryptsetup.target                                                                                     loaded active active    Encrypted Volumes
+  getty.target                                                                                          loaded active active    Login Prompts
+  local-fs-pre.target                                                                                   loaded active active    Local File Systems (Pre)
+  local-fs.target                                                                                       loaded active active    Local File Systems
+  multi-user.target                                                                                     loaded active active    Multi-User System
+  network-online.target                                                                                 loaded active active    Network is Online
+  network.target                                                                                        loaded active active    Network
+  nfs-client.target                                                                                     loaded active active    NFS client services
+  nss-lookup.target                                                                                     loaded active active    Host and Network Name Lookups
+  paths.target                                                                                          loaded active active    Paths
+  remote-fs-pre.target                                                                                  loaded active active    Remote File Systems (Pre)
+  remote-fs.target                                                                                      loaded active active    Remote File Systems
+  rpcbind.target                                                                                        loaded active active    RPC Port Mapper
+  slices.target                                                                                         loaded active active    Slices
+  sockets.target                                                                                        loaded active active    Sockets
+  swap.target                                                                                           loaded active active    Swap
+  sysinit.target                                                                                        loaded active active    System Initialization
+  timers.target                                                                                         loaded active active    Timers
+  systemd-readahead-done.timer                                                                          loaded active elapsed   Stop Read-Ahead Data Collection 10s After Completed Startup
+  systemd-tmpfiles-clean.timer                                                                          loaded active waiting   Daily Cleanup of Temporary Directories
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+[1;39m232 loaded units listed.[0m Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.

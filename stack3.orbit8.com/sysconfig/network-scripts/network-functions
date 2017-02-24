@@ -170,7 +170,7 @@ source_config ()
     else
 	ISALIAS=no
     fi
-    if is_nm_running; then
+    if is_nm_running && [ "$REALDEVICE" != "lo" ] ; then
         nmcli con load "/etc/sysconfig/network-scripts/$CONFIG"
         if ! is_false $NM_CONTROLLED; then
             UUID=$(get_uuid_by_config $CONFIG)
@@ -338,10 +338,8 @@ is_available_wait ()
 
     local retry=${2##*[!0-9]*}
 
-    is_available $1
+    is_available $1 && return 0
     ret=$?
-
-    [ 0"$ret" -ne 1 ] && return $ret
 
     while [ 0"$retry" -gt 0 ]; do
         sleep 1
@@ -349,7 +347,7 @@ is_available_wait ()
         retry=$(($retry -1))
     done
 
-    return 1
+    return $ret
 }
 
 need_hostname ()

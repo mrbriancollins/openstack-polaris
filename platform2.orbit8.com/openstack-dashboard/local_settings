@@ -253,7 +253,7 @@ OPENSTACK_ENABLE_PASSWORD_RETRIEVE = True
 # Toggle LAUNCH_INSTANCE_LEGACY_ENABLED and LAUNCH_INSTANCE_NG_ENABLED to
 # determine the experience to enable.  Set them both to true to enable
 # both.
-LAUNCH_INSTANCE_LEGACY_ENABLED = True
+#LAUNCH_INSTANCE_LEGACY_ENABLED = True
 LAUNCH_INSTANCE_NG_ENABLED = True
 
 # The Xen Hypervisor has the ability to set the mount point for volumes
@@ -340,9 +340,9 @@ OPENSTACK_NEUTRON_NETWORK = {
 
 # The OPENSTACK_HEAT_STACK settings can be used to disable password
 # field required while launching the stack.
-#OPENSTACK_HEAT_STACK = {
-#   'enable_user_pass': True,
-#}
+OPENSTACK_HEAT_STACK = {
+   'enable_user_pass': False,
+}
 
 # The OPENSTACK_IMAGE_BACKEND settings can be used to customize features
 # in the OpenStack Dashboard related to the Image service, such as the list

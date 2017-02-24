@@ -1,0 +1,5 @@
+DEVICE=br-15
+ONBOOT=yes
+BOOTPROTO=none
+TYPE=OVSBridge
+DEVICETYPE=ovs

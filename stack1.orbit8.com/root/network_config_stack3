@@ -1,0 +1,62 @@
+echo DEVICE=em1 > /etc/sysconfig/network-scripts/ifcfg-em1
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo MTU=9000 >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo MASTER=bond0 >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo SLAVE=yes >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo HWADDR=18:03:73:ed:e9:4c >> /etc/sysconfig/network-scripts/ifcfg-em1
+
+echo DEVICE=em3 > /etc/sysconfig/network-scripts/ifcfg-em3
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo MTU=9000 >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo MASTER=bond0 >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo SLAVE=yes >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo HWADDR=18:03:73:ed:e9:50 >> /etc/sysconfig/network-scripts/ifcfg-em3
+
+echo DEVICE=bond0 > /etc/sysconfig/network-scripts/ifcfg-bond0
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0
+echo DEVICETYPE=Bond >> /etc/sysconfig/network-scripts/ifcfg-bond0
+echo BONDING_MASTER=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0
+echo 'BONDING_OPTS="mode=6"' >> /etc/sysconfig/network-scripts/ifcfg-bond0
+echo MTU=9000 >> /etc/sysconfig/network-scripts/ifcfg-bond0
+
+echo DEVICE=bond0.10 > /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo TYPE=OVSPort >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo VLAN=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo OVS_BRIDGE=br-10 >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo DEFROUTE=no >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo PEERDNS=no >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+echo MACADDR=18:03:73:ed:e9:50 >> /etc/sysconfig/network-scripts/ifcfg-bond0.10
+
+echo DEVICE=bond0.13 > /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo BOOTPROTO=dhcp >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo TYPE=Vlan >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo VLAN=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo DEFROUTE=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+echo MACADDR=18:03:73:ed:e9:4c >> /etc/sysconfig/network-scripts/ifcfg-bond0.13
+
+echo DEVICE=bond0.15 > /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo TYPE=OVSPort >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo VLAN=yes >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo OVS_BRIDGE=br-15 >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo DEFROUTE=no >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo PEERDNS=no >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+echo MACADDR=18:03:73:ed:f0:50 >> /etc/sysconfig/network-scripts/ifcfg-bond0.15
+
+echo DEVICE=br-10 > /etc/sysconfig/network-scripts/ifcfg-br-10
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-br-10
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-br-10
+echo TYPE=OVSBridge >> /etc/sysconfig/network-scripts/ifcfg-br-10
+echo DEVICETYPE=ovs >> /etc/sysconfig/network-scripts/ifcfg-br-10
+
+echo DEVICE=br-15 > /etc/sysconfig/network-scripts/ifcfg-br-15
+echo ONBOOT=yes >> /etc/sysconfig/network-scripts/ifcfg-br-15
+echo BOOTPROTO=none >> /etc/sysconfig/network-scripts/ifcfg-br-15
+echo TYPE=OVSBridge >> /etc/sysconfig/network-scripts/ifcfg-br-15
+echo DEVICETYPE=ovs >> /etc/sysconfig/network-scripts/ifcfg-br-15
